@@ -1,5 +1,6 @@
 {
   "name": "gui",
+  "description": "API Navigator enables developers to traverse large and complex API References smoothly and efficiently through a top-notch PWA.",
   "private": false,
   "version": "1.0.0",
   "type": "module",
