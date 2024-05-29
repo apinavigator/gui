@@ -54,7 +54,10 @@
         "description": "",
         "content": [
           { "kind": "text", "value": "This is the topic's description." },
-          { "kind": "javascript", "value": "let foo = 42; // foo is now a number\nfoo = 'bar'; // foo is now a string\nfoo = true; // foo is now a boolean" }
+          { "kind": "javascript", "value": "let foo = 42; // foo is now a number\nfoo = 'bar'; // foo is now a string\nfoo = true; // foo is now a boolean" },
+          { "kind": "text", "value": "This is the topic's description." },
+          { "kind": "javascript", "value": "const str1 = 'The quick brown fox jumps over the lazy dog.';\nstr1.slice(31) // 'the lazy dog.'\nstr1.slice(4, 19) // 'quick brown fox'\nstr1.slice(-4) // 'dog.'\nstr1.slice(-9, -5) // 'lazy'" },
+          { "kind": "text", "value": "This is gonna be a very large piece of text to see if it works out well with the window size" }
         ],
         "sources": []
       },
@@ -152,6 +155,7 @@
         "name": "matchAll",
         "longName": "matchAll(regexp)",
         "description": "",
+        "experimental": true,
         "content": [
           { "kind": "text", "value": "This is the topic's description."}
         ],
@@ -192,6 +196,71 @@
           { "kind": "text", "value": "This is the topic's description."}
         ],
         "sources": []
+      }
+    ]
+  },
+  {
+    "name": "Core Concepts",
+    "topics": [
+      {
+        "name": "Responsive Design",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "Using responsive utility variants to build adaptive user interfaces." },
+          { "kind": "css", "value": "/*sm*/  @media (min-width: 640px) { ... }\n/*md*/  @media (min-width: 768px) { ... }\n/*lg*/  @media (min-width: 1024px) { ... }\n/*xl*/  @media (min-width: 1280px) { ... }\n/*2xl*/ @media (min-width: 1536px) { ... }" },
+          { "kind": "text", "value": "Example" },
+          { "kind": "html", "value": "<img class='w-16 md:w-32 lg:w-48' src='...'>" }
+        ],
+        "sources": [""]
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "topics": [
+      {
+        "name": "Aspect Ratio",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "Utilities for controlling the aspect ratio of an element." },
+          { "kind": "html", "value": "<iframe class='w-full aspect-video ...'\n\t\tsrc='https://www.youtube.com/...'>\n</iframe>" }
+        ],
+        "sources": ["https://tailwindcss.com/docs/aspect-ratio"]
+      },
+      {
+        "name": "Container",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "A component for fixing an element's width to the current breakpoint." },
+          { "kind": "text", "value": "To center a container, use the mx-auto utility:" },
+          { "kind": "html", "value": "<div class='container mx-auto'>\n...\n</div>" },
+          { "kind": "text", "value": "To add horizontal padding, use the px-* utilities:" },
+          { "kind": "html", "value": "<div class='container mx-auto px-4'>\n...\n</div>" }
+        ],
+        "sources": ["https://tailwindcss.com/docs/container"]
+      }
+    ]
+  },
+  {
+    "name": "test",
+    "topics": [
+      {
+        "name": "test",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "test defines a set of related expectations. It receives the test name and a function that holds the expectations to test."},
+          { "kind": "typescript", "value": "import { expect, test } from 'vitest'\n\ntest('should work as expected', () => {\n\texpect(Math.sqrt(4)).toBe(2)\n})" }
+        ],
+        "sources": ["https://vitest.dev/api/#test"]
+      },
+      {
+        "name": "test.extend",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "Use test.extend to extend the test context with custom fixtures. This will return a new test and it's also extendable, so you can compose more fixtures or override existing ones by extending it as you need."},
+          { "kind": "typescript", "value": "import { expect, test } from 'vitest'\n\nconst todos = []\nconst archive = []\n\nconst myTest = test.extend({\n\t  todos: async ({ task }, use) => {\n\t\ttodos.push(1, 2, 3)\n\t\tawait use(todos)\n\t\ttodos.length = 0\n\t},\n\tarchive\n})" }
+        ],
+        "sources": ["https://vitest.dev/api/#test"]
       }
     ]
   }

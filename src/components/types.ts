@@ -17,6 +17,7 @@ interface ITopic {
   name: string;
   longName?: string;
   description: string;
+  experimental?: boolean;
   content: ITopicContentItem[],
   sources: string[]
 }
