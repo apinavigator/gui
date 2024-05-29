@@ -9,14 +9,16 @@
 type ITopicContentItemKind = 'text' | string;
 
 interface ITopicContentItem {
-  kind?: ITopicContentItemKind,
+  kind: ITopicContentItemKind,
   value: string
 }
 
 interface ITopic {
   name: string;
+  longName?: string;
   description: string;
-  content: ITopicContentItem[]
+  content: ITopicContentItem[],
+  sources: string[]
 }
 
 
@@ -33,6 +35,7 @@ interface ISubject {
  *                                         MODULE EXPORTS                                         *
  ************************************************************************************************ */
 export type {
+  ITopicContentItem,
   ITopic,
   ISubject,
 };

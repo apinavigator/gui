@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Fundamentals",
+    "topics": [
+      {
+        "name": "Data Types & Structures",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": [
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+        ]
+      },
+      {
+        "name": "function",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "Conditionals",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "Loops",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "Error Instances",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      }
+    ]
+  },
+  {
+    "name": "String",
+    "topics": [
+      {
+        "name": "length",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description." },
+          { "kind": "javascript", "value": "let foo = 42; // foo is now a number\nfoo = 'bar'; // foo is now a string\nfoo = true; // foo is now a boolean" }
+        ],
+        "sources": []
+      },
+      {
+        "name": "at",
+        "longName": "at(index)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "charAt",
+        "longName": "charAt(index)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "charCodeAt",
+        "longName": "charCodeAt(index)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "concat",
+        "longName": "concat(str1, str2?, /* …, */ strN?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "endsWith",
+        "longName": "endsWith(searchString, endPosition?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "includes",
+        "longName": "includes(searchString, startPosition?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "indexOf",
+        "longName": "indexOf(searchString, startPosition?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "lastIndexOf",
+        "longName": "lastIndexOf(searchString, endPosition?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "localeCompare",
+        "longName": "localeCompare(compareString, locales?, options?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "match",
+        "longName": "match(regexp)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "matchAll",
+        "longName": "matchAll(regexp)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "padEnd",
+        "longName": "padEnd(targetLength, padString?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "padStart",
+        "longName": "padStart(targetLength, padString?)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "repeat",
+        "longName": "repeat(count)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      },
+      {
+        "name": "replace",
+        "longName": "replace(pattern, replacement)",
+        "description": "",
+        "content": [
+          { "kind": "text", "value": "This is the topic's description."}
+        ],
+        "sources": []
+      }
+    ]
+  }
+]

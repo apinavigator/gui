@@ -1,10 +1,9 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import { Menu, Search } from 'lucide-react';
 import { Button } from '../shared/components/ui/button.tsx';
 import { CommandShortcut } from '../shared/components/ui/command.tsx';
 import { Subject } from './subject.tsx';
-import { JAVASCRIPT } from './javascript.db';
-
+import db from './db.json';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -36,7 +35,12 @@ const App = () => {
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
 
-          {JAVASCRIPT.map((subject, index) => <Subject key={index} subject={subject} />)}
+          {db.map((subject, index) => (
+              <Fragment key={index}>
+                <Subject subject={subject} />
+                <hr className='sm:hidden last:hidden' />
+              </Fragment>
+          ))}
 
         </div>
 
