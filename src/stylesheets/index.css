@@ -56,7 +56,7 @@
  */
 .topic-container {
   margin-top: 5px;
-
+  @apply text-sm;
 }
 .topic-container > p {
   @apply my-3 text-slate-600;
